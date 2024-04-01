@@ -1,13 +1,243 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ /* margin:0px 5px; */
+ /* padding:0px 3px; */
+ overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.bg{   
+  background-image:url('./components/Images/busi.jpg');
+      height :93.6vh;
+      width:99.6vw;
+      font-size:50px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.9;
+      overflow-x: hidden;
+      overflow-y: hidden;
+}
+
+.mid{
+  display: flex;
+  justify-content: center;
+  margin: -4px;
+  font-weight: 900;
+  padding: 180px 400px;
+  font-size:40px;
+  color: black;
+}
+
+.txt{
+  display:flex;
+  justify-content: center;
+  font-size:30px;
+  color: rgb(8, 13, 9);
+  font-weight: 600;
+  padding: 0px 400px;
+  position: relative;
+  top: -160px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+a:hover {
+  color: rgb(90, 78, 78);
+}
+
+
+.card {
+  transition: transform 0.5s;
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border-radius: 60px; 
+  overflow: hidden; 
+}
+
+
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: lightblue;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(13, 1, 11);
+  /* transform: rotate(3deg); */
+
+}
+
+.card:hover .card-title, 
+.card:hover .card-text,
+.card:hover a {
+  color: rgb(71, 6, 74);
+  font-size: 20px;
+}
+
+
+.hd{
+  margin: 100px 100px;
+}
+
+
+.txt1{
+  font-size:70px;
+  color: rgb(29, 2, 22);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.arr{
+  width:170px;
+}
+
+.arr1{
+  width:50px;
+}
+
+.arr:hover{
+  transform: rotate(3deg);
+}
+.arr1:hover{
+  transform: rotate(3deg);
+}
+
+
+.heading{
+  font-family: 'Arial', sans-serif; 
+  font-size: 48px; 
+  font-weight: bold; 
+  color: #faf7f7;
+  text-align: center; 
+  letter-spacing: 2px; 
+  padding: 20px 20px; 
+  background-color: rgb(29, 2, 22);
+  border: 2px solid #333; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.car{
+  width:'100%';
+  border-radius:"50px";
+}
+
+
+
+.head{
+  font-size: 48px;
+  background: linear-gradient(90deg, #333333, #660066, #003300, #330033, #000066);
+  -webkit-background-clip: text; 
+  color: transparent; 
+
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid #000;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding-right: .7em;
+  padding-left: 1em;
+  animation: writing 5s steps(50, end) infinite, blink-caret 2s step-end;
+}
+
+.head:hover{
+  color: #1e6820;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(235, 228, 234);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-style:italic;
+}
+
+
+.xyz {
+  position: relative;
+  width: 300px;
+} 
+
+.xyz:hover .overlay {
+  opacity: 1;
+}
+
+
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid #000;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding-right: .7em;
+  padding-left: 1em;
+  animation: typing 9s steps(50, end) infinite, blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+@keyframes writing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #000 }
+}
+
+
+.more{
+  width: 70px;
+  margin:146px;
+}
+
+.more:hover{
+  transform: scale(1.6);
+}
+
+
+.navbar{
+  overflow: hidden;
+  background-color: #333;
+  /* position: sticky; */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.par{
+  font-size: 20px;
+}
+
+.xyz{
+  margin-left: auto;
+  width: 90%;
+  display: flex;
+  justify-Content:flex-end;
 }
